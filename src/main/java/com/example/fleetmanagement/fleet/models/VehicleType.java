@@ -2,7 +2,7 @@ package com.example.fleetmanagement.fleet.models;
 
 import javax.persistence.Entity;
 
-import com.example.fleetmanagement.models.CommonObject;
+import com.example.fleetmanagement.parameters.models.CommonObject;
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 

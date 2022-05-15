@@ -1,5 +1,18 @@
 package com.example.fleetmanagement.accounts.models;
 
+import com.example.fleetmanagement.hr.models.Employee;
+import com.example.fleetmanagement.parameters.models.Client;
+import com.example.fleetmanagement.parameters.models.Contact;
+import com.example.fleetmanagement.parameters.models.Supplier;
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import org.springframework.format.annotation.DateTimeFormat;
+
+import javax.persistence.*;
+import java.util.Date;
+
 @Entity
 @Data
 @EqualsAndHashCode(callSuper=false)
