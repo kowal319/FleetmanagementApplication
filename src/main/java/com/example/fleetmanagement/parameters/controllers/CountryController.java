@@ -48,6 +48,12 @@ public class CountryController {
         model.addAttribute("country", country);
         return "parameters/countryEdit";
     }
+    @GetMapping("country/Details/{id}")
+    public String detailsCountry(@PathVariable Integer id, Model model) {
+        Country country = countryService.getById(id);
+        model.addAttribute("country", country);
+        return "parameters/countryDetails";
+    }
 
     @RequestMapping(value="/countries/update/{id}", method = { RequestMethod.GET, RequestMethod.PUT})
     public String update(Country country){
