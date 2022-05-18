@@ -24,6 +24,11 @@ public class CountryController {
         model.addAttribute("countries", countries);
         return "parameters/countries";
     }
+    @GetMapping("/country/{id}")
+    @ResponseBody
+    public Country getCountry(@PathVariable Integer id){
+        return  countryService.getById(id);
+    }
 
     @GetMapping("countryAdd")
     public String addCountry(Model model) {
