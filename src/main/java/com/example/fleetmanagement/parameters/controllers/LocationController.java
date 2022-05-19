@@ -10,12 +10,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
 
 @Controller
 public class LocationController {
-    @Autowired
-    private StateService stateService;
+    @Autowired private StateService stateService;
     @Autowired private CountryService countryService;
     @Autowired private LocationService locationService;
 
@@ -31,6 +29,7 @@ public class LocationController {
         addModelAttribute(model);
         return "parameters/locations";
     }
+
 
     @GetMapping("locationAdd")
     public String addLocation(Model model) {

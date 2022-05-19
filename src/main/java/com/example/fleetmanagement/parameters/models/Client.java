@@ -22,8 +22,6 @@ import lombok.NoArgsConstructor;
 @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
 public class Client {
 
-	//https://drive.google.com/drive/folders/11qLcJ_0z3PmzdxstyGokg7161d83ziZw
-
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name="id")
